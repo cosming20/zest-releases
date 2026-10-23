@@ -1,0 +1,33 @@
+Zest 0.1.0 - bundled third-party components
+===========================================
+
+Zest itself is released under the MIT license (LICENSE). It runs the programs below as
+separate processes; each keeps its own license, and the full texts ship inside the app
+(macOS: Zest.app/Contents/Resources/Licenses, Windows: the Licenses folder of the install).
+All of them are unmodified upstream builds.
+
+Component                         macOS build              Windows build            License
+FFmpeg                            8.0.1 (Homebrew)         9.0.2 (Gyan.dev full)    GPL-3.0-or-later
+Pandoc                            3.12.1                   3.12.1                   GPL-2.0-or-later
+Ghostscript                       10.08.0 (Homebrew)       10.08.0                  AGPL-3.0-or-later
+LibreOffice                       26.2.4.2                 26.2.4.2                 MPL-2.0 and others
+ONLYOFFICE x2t converter          10.0.0                   10.0.0                   AGPL-3.0
+Carlito, Caladea, Liberation      -                        -                        SIL OFL 1.1
+Microsoft Visual C++ runtime      -                        bundled                  VS redistribution terms
+
+The FFmpeg builds enable GPL components (libx264, libx265 and others); the license of every
+bundled library is listed next to the FFmpeg license inside the app.
+
+Corresponding source code
+-------------------------
+Attached to the GitHub release next to the installers:
+    ffmpeg-8.0.1.tar.xz, ffmpeg-9.0.2.tar.xz, pandoc-3.12.1.tar.gz, ghostscript-10.08.0.tar.gz
+
+Upstream:
+FFmpeg       https://ffmpeg.org/releases/
+             (Windows build recipe and library sources: https://www.gyan.dev/ffmpeg/builds/)
+Pandoc       https://github.com/jgm/pandoc/archive/refs/tags/3.12.1.tar.gz
+Ghostscript  https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/ghostscript-10.08.0.tar.gz
+LibreOffice  https://downloadarchive.documentfoundation.org/libreoffice/old/26.2.4.2/src/
+ONLYOFFICE   https://github.com/ONLYOFFICE/DesktopEditors/tree/v10.0.0 (with its core, sdkjs
+             and web-apps submodules)
